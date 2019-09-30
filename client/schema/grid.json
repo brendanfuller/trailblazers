@@ -1,0 +1,61 @@
+{
+    "PLATES": [
+        [
+            {
+                "id": "932u08yhdsf",
+                "plate": "FIELD",
+                "value": 10
+            }
+        ]
+    ],
+    "STATIONS": {
+        "932u08yhdsf": {
+            "T": {
+                "type": "CITY",
+                "color": "red"
+            },
+            "B": {
+                "type": "HOUSE",
+                "color": "red"
+            },
+            "LT": {
+                "type": "HOUSE",
+                "color": "red"
+            },
+            "LB": {
+                "type": "HOUSE",
+                "color": "red"
+            },
+            "RT": {
+                "type": "HOUSE",
+                "color": "red"
+            },
+            "RB": {
+                "type": "HOUSE",
+                "color": "red"
+            }
+        }
+    },
+    "ROADS": {
+        "932u08yhdsf": {
+            "TR": {
+                "color": "red"
+            },
+            "TL": {
+                "color": "red"
+            },
+            "L": {
+                "color": "red"
+            },
+            "R": {
+                "color": "red"
+            },
+            "BR": {
+                "color": "red"
+            },
+            "BL": {
+                "color": "red"
+            }
+        }
+    }
+}

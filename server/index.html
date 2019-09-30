@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+    <title>Trailblazers</title>
+    <style>
+
+        html, body {
+            background-color: #bd4f6c;
+            background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
+            height: 100%;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        function search(ele) {
+            if (event.key === 'Enter') {
+                window.location.href = "/r/" + ele.value;
+            }
+        }
+        function go(event) {
+            console.log(event.key)
+            if (event.key === "Enter") {
+                let room = document.querySelector("#room").id
+                console.log("room")
+                window.location.href = "/r/" + room;
+            }
+
+        }
+    </script>
+    <div id="app">
+        <div
+            style="text-align:center;display:flex;justify-content:center;align-items:center;width:100vw;height:100vh;font-family:Turret Road,cursive;">
+            <div>
+                <h1 style="font-size:70px">Trailblazers<br> </h1>
+                <h3>Enter Room ID</h3>
+                <input type="text" id="room" onkeydown="search(this)" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

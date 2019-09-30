@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-spread": "^7.2.2",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-import": "^1.12.2",
+    "cssnano": "^4.1.10",
+    "express": "^4.17.1",
+    "less": "^3.10.3",
+    "react": "^16.0.0",
+    "react-hot-loader": "^4.12.12"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.9.0",
+    "@mdi/js": "^4.3.95",
+    "@mdi/react": "^1.2.1",
+    "antd": "^3.23.1",
+    "classnames": "^2.2.6",
+    "duix": "^1.0.5",
+    "eventlistener": "^0.0.1",
+    "js-cookie": "^2.2.1",
+    "react-dom": "^16.9.0",
+    "react-grid-system": "^5.0.2",
+    "socket.io-client": "^2.2.0"
+  }
+}

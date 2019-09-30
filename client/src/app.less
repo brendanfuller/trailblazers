@@ -1,0 +1,465 @@
+html,
+body {
+    user-select: none;
+    margin          : 0px;
+    padding         : 0px;
+    background-color: #06bcfb;
+    background-image: linear-gradient(215deg, #14b5eb 0%, #084fca 74%);
+
+    ::-webkit-scrollbar-track {
+
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar {
+        width           : 12px;
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+
+        background-color: #555;
+    }
+
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.card-no-hover {
+    border       : 3px solid black;
+    border-radius: 5px;
+    transition   : all 0.5s ease;
+    scale        : 1;
+    margin       : 5px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+
+        border   : 3px solid gray;
+    }
+    .box {
+        background-repeat: no-repeat;
+        background-size  : cover;
+    }
+
+    .card-image {
+        object-fit: cover;
+        width     : 100px;
+        height    : 100px;
+    }
+}
+
+
+.card {
+    border       : 3px solid black;
+    border-radius: 5px;
+    transition   : all 0.5s ease;
+    scale        : 1;
+    margin       : 5px;
+
+    .box {
+        background-repeat: no-repeat;
+        background-size  : cover;
+    }
+
+    &:hover {
+        scale    : 2;
+        transform: translateY(-10px);
+        border   : 3px solid gray;
+    }
+
+    .card-image {
+        object-fit: cover;
+        width     : 100px;
+        height    : 100px;
+    }
+}
+.shop {
+    margin-right : 10px;
+    border-radius: 30px;
+
+    &-icon {
+        transition: all 0.5s ease;
+        cursor    : pointer;
+
+        &:hover {
+            transform: translateY(-10px)
+        }
+    }
+}
+
+#footer {
+    z-index               : 2;
+    border-top-left-radius: 30px;
+
+
+    
+
+    .turn {
+        background               : black;
+        border-top-left-radius   : 30px;
+        border-bottom-left-radius: 30px;
+
+        .dices {
+            &:hover {
+                animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+                transform: translate3d(0, 0, 0);
+            }
+
+            cursor : pointer;
+        }
+
+        .turn {
+            cursor: pointer;
+        }
+
+        .dice-large {
+            font-size: 5em;
+        }
+    }
+}
+
+#slide {
+    z-index      : 2;
+    border-radius: 30px;
+    transition   : all 0.5s ease;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+    color      : black !important;
+    font-weight: normal !important;
+}
+
+.ant-tabs-nav .ant-tabs-tab:hover {
+    color: gray;
+}
+
+#sidebar {
+    z-index               : 2;
+    background            : black;
+    border-top-left-radius: 30px;
+    overflow              : hidden;
+
+    .card-container>.ant-tabs-card {
+        border: none;
+
+    }
+
+    .card-container>.ant-tabs-card>.ant-tabs-content {
+
+        margin-top: -16px;
+    }
+
+    .card-container>.ant-tabs-card>.ant-tabs-content>.ant-tabs-tabpane {
+        color: #fff;
+
+    }
+
+    .card-container>.ant-tabs-card>.ant-tabs-bar {
+        border-color: transparent;
+    }
+
+    .card-container>.ant-tabs-card>.ant-tabs-bar .ant-tabs-tab {
+        border-color : darkgray;
+        background   : darkgray;
+        border-radius: 10px;
+        margin-left  : 3px;
+    }
+
+    .card-container>.ant-tabs-card>.ant-tabs-bar .ant-tabs-tab-active {
+        border-color : #fff;
+        background   : #fff;
+        border-radius: 10px;
+        margin-left  : 3px;
+    }
+
+    .ant-tabs-nav-scroll>div {
+        width          : 100%;
+        display        : flex;
+        justify-content: center;
+    }
+
+    .tabs {
+        margin : 10px;
+        padding: 10px;
+    }
+
+    .bank {
+        z-index     : 1;
+        margin-right: 100px;
+    }
+
+    .chat {
+
+        padding: 10px;
+
+        .message {
+
+            background   : white;
+            color        : black;
+            border-radius: 10px;
+            padding      : 7px;
+            margin-bottom: 5px;
+
+            p {
+                word-wrap: break-word;
+            }
+
+            .user {
+                font-weight: bold;
+            }
+
+            .text {}
+        }
+
+        .input {
+            margin-top: 10px;
+        }
+    }
+
+    
+}
+.users {
+    z-index   : 1;
+    margin-top: 20px;
+    padding   : 15px;
+    color     : black;
+
+    .user {
+        transition: all 0.5s ease;
+        scale     : 1;
+
+        &:hover {
+            cursor   : pointer;
+            transform: translate(-10px)
+        }
+
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background   : lightgreen;
+
+        &-avatar {
+
+            margin-right: 10px;
+        }
+
+        &-name {
+            font-weight: bold;
+        }
+
+        &-triumph {
+
+            svg {
+                margin-top: 3px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        &-info {
+            margin: 10px;
+        }
+
+        &-specs {
+
+            border-radius: 5px;
+            background   : darkslategray;
+
+
+            .item {
+                padding: 5px;
+                color  : white;
+            }
+        }
+    }
+}
+//Corner Style for the curve between the sidebar and footer
+#corner {
+    overflow                  : hidden;
+    position                  : fixed;
+    width                     : 60px;
+    height                    : 50px;
+    border-bottom-right-radius: 30px;
+
+    bottom   : 128px;
+    transform: translateX(-28px);
+    overflow : hidden;
+
+
+    border-radius: 1em;
+
+    &:before {
+        position     : absolute;
+        margin       : -2.0em;
+        padding      : 2.0em;
+        border-radius: 30px;
+
+        box-shadow: 0 0 0 300px black;
+        content   : ''
+    }
+
+
+}
+
+
+
+
+
+#game-area {
+    .reset {
+        transition: all 0.5s ease;
+        position: fixed;
+        background: white;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        z-index: 20;
+        transform: scale(1);
+        &:hover {
+            transform: scale(2);
+            cursor: pointer;
+        }
+    }
+    .plate {
+        margin-left : -12.5px;
+        margin-right: -12.5px;
+    }
+
+    .hexagon {
+        path {
+            stroke         : black;
+            stroke-width   : 10px;
+            stroke-linejoin: round;
+        }
+    }
+
+    svg:not(:root) {
+        overflow: visible;
+    }
+
+    .road {
+        position     : fixed;
+        width        : 14px;
+        height       : 95px;
+        border-radius: 10px;
+
+        &.top-right {
+            transform: translate(50px, -25px) rotate(60deg);
+        }
+
+        &.top-left {
+            transform: translate(136px, -25px) rotate(-60deg);
+        }
+
+        &.left {
+            transform: translate(5px, 52px);
+        }
+
+        &.right {
+            transform: translate(180px, 52px);
+        }
+
+        &.bottom-left {
+            transform: translate(50px, 126px) rotate(-60deg);
+        }
+
+        &.bottom-right {
+            transform: translate(136px, 126px) rotate(60deg);
+        }
+
+    }
+
+    .station {
+        position: fixed;
+        width   : 30px;
+        height  : 30px;
+        border-radius: 5px;
+        z-index: 100;
+        &.select {
+            border-radius: 10px;
+        }
+        &.VILLAGE {
+   
+          
+        }
+
+        &.CITY {
+            border-radius: 50px;
+        }
+
+        &.top {
+            transform: translate(85px, -15px);
+        }
+
+        &.top-left {
+            transform: translate(-3px, 30px);
+        }
+
+        &.top-right {
+            transform: translate(172px, 30px);
+        }
+
+        &.bottom {
+            transform: translate(85px, 180px);
+        }
+
+        &.bottom-left {
+            transform: translate(-3px, 140px);
+        }
+
+        &.bottom-right {
+            transform: translate(172px, 140px);
+        }
+
+    }
+    .value {
+        text-align: center;
+        position: fixed;
+        width   : 50px;
+        border-radius: 10px;
+        height  : 55px;
+        padding-left: 2px;
+        font-size: 37px;
+        background: white;
+        z-index: 100;
+        transform: translate(78px, 70px;);
+    }
+}
+
+
+#game-wrapper {
+
+    will-change: transform, box-shadow, z-index;
+}
+
+
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
