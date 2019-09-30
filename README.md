@@ -1,7 +1,10 @@
 # Trailblazers
 Web app recreation of Catan (WIP)
+
 ![Trailblazers](https://user-images.githubusercontent.com/13824197/65849316-d17e9e80-e317-11e9-9998-810fc8dc1f94.png)
 
+## Demo
+[DEMO](http://trail-blazers-game.herokuapp.com)
 
 ## Gameplay
 - Trailblazers is just like the wonderful catan but with a few key features missing.
